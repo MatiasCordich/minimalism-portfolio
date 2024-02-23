@@ -10,4 +10,4 @@ if (date.getMonth() < birthday.getMonth() || (date.getMonth() === birthday.getMo
     yearsOld--;
 }
 
-miniText.textContent = `Me llamo Matias, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`
+miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`
