@@ -160,7 +160,19 @@ footer{
 
 .header_information ul{
     display: flex;
+    align-items: center;
     gap: 1rem;
+}
+
+.resume_btn{
+    background-color: #34495E;
+    text-align: center;
+    color: #fafafa;
+    font-family: var(--text-Font);
+    font-size: 1.2rem;
+    padding: 1rem;
+    max-width: 15rem;
+    border-radius: .3rem;
 }
 
 
