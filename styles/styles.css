@@ -115,7 +115,6 @@ footer {
   padding: 2rem;
   height: 100%;
   position: relative;
-  cursor: pointer;
 }
 
 /* -----  ----- BTN SCROLL UP -----  ----- */
@@ -133,8 +132,8 @@ footer {
   left: 80%;
   bottom: 2rem;
   z-index: 2;
-  cursor: pointer;
   transition: opacity 1s, transform 1s;
+  cursor: pointer;
 }
 
 .show {
@@ -230,6 +229,8 @@ footer {
 
 .work_stack p {
   font-size: 1.4rem;
+  color: var(--black);
+  font-weight: 500;
 }
 
 /* -----  ----- SKILLS -----  ----- */
