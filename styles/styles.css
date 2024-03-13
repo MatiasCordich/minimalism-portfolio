@@ -1,282 +1,315 @@
 /* -----  ----- Variables -----  ----- */
-:root{
-    --title-Font: "Montserrat", sans-serif;
-    --text-Font: "Roboto Mono", monospace;
+:root {
+  --title-Font: "Montserrat", sans-serif;
+  --text-Font: "Roboto Mono", monospace;
 }
 
 /* -----  ----- Globals -----  ----- */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.8rem;
+body {
+  font-size: 1.8rem;
 }
 
-html,body{
-    width: 100%;
-    min-height: 100%;
+html,
+body {
+  width: 100%;
+  min-height: 100%;
 }
 
-h1,h2,h3,h4{
-    font-family: var(--title-Font);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title-Font);
 }
 
-h2{
-    margin-bottom: 1rem;
+h2 {
+  margin-bottom: 1rem;
 }
 
-p{
-    font-family: var(--text-Font);
-    color: #5F6769 ;
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+p {
+  font-family: var(--text-Font);
+  color: #5f6769;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
-.card_university{
-    font-size: 1.2rem;
+.card_university {
+  font-size: 1.2rem;
 }
 
 /* -----  ----- CARD HEADER -----  ----- */
 
-.card-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: .2rem;
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
 }
 
-.card-header h3{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: .5rem;
-    font-size: 1.8rem;
+.card-header h3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
 }
 
-.card-header span{
-    background-color: #C7C8CC;
-    padding: .5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    font-family: var(--text-Font);
+.card-header span {
+  background-color: #c7c8cc;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: var(--text-Font);
 }
 
-.card-header p{
-    font-size: 1.3rem;
+.card-header p {
+  font-size: 1.3rem;
 }
 
-.card_role{
-    font-weight: 600;
-    color: #272829;
+.card_role {
+  font-weight: 600;
+  color: #272829;
 }
 
 /* -----  ----- Body -----  ----- */
 
-.wrapper{
-    max-width: 100rem;
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding: 2rem;
-    height: 100%;
+.wrapper {
+  max-width: 100rem;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
 }
 
+/* -----  ----- BTN SCROLL UP -----  ----- */
+
+.btn_scroll-up {
+  background-color: #34495e;
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  position: fixed;
+  left: 80%;
+  bottom: 2rem;
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity 1s, transform 1s;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(-100%);
+}
 /* -----  ----- HEADER -----  ----- */
 
-.header{
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+.header {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.header h1{
-    font-weight: 700;
-
+.header h1 {
+  font-weight: 700;
 }
 
-.header_container{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+.header_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.header_img{
-    width: 10rem;
-    height: 10rem;
-    background-color: #34495E;
-    border-radius: .5rem;
+.header_img {
+  width: 10rem;
+  height: 10rem;
+  background-color: #34495e;
+  border-radius: 0.5rem;
 }
 
-.header_container p{
-    width: 90%;
+.header_container p {
+  width: 90%;
 }
 
-.header_location{
-    display: flex;
-    align-items: center;
+.header_location {
+  display: flex;
+  align-items: center;
 }
 
-.header_information{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 50%;
+.header_information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
 }
 
 .header_information p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.header_information ul{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.header_information ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.resume_btn{
-    background-color: #34495E;
-    text-align: center;
-    color: #fafafa;
-    font-family: var(--text-Font);
-    font-size: 1.2rem;
-    padding: 1rem;
-    max-width: 15rem;
-    border-radius: .3rem;
+.resume_btn {
+  background-color: #34495e;
+  text-align: center;
+  color: #fafafa;
+  font-family: var(--text-Font);
+  font-size: 1.2rem;
+  padding: 1rem;
+  max-width: 15rem;
+  border-radius: 0.3rem;
 }
-
 
 /* -----  ----- EXPERIENCE -----  ----- */
-.experience{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.experience_card{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.experience_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.work_stack{
-    display: flex;
-    flex-wrap:wrap ;
-    align-items: center;
-    gap: 1rem;
+.work_stack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
 
-.work_stack p{
-    font-size: 1.4rem;
+.work_stack p {
+  font-size: 1.4rem;
 }
 
 /* -----  ----- SKILLS -----  ----- */
 
-.skills ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.skill_item{
-    color: #fafafa;
-    font-family: var(--text-Font);
-    font-size: 1.4rem;
-    padding: .5rem;
-    border-radius: .5rem;
-    background-color: #34495E;
+.skill_item {
+  color: #fafafa;
+  font-family: var(--text-Font);
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #34495e;
 }
 
 /* -----  ----- PROJECTS -----  ----- */
 
-.projects{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.project_card-container{
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+.project_card-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.project_card{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 30rem;
-    width: 100%;
-    border: 1px solid #EEEDEB;
-    border-radius: .1rem;
-    padding: .8rem;
+.project_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 30rem;
+  width: 100%;
+  border: 1px solid #eeedeb;
+  border-radius: 0.1rem;
+  padding: 0.8rem;
 }
 
-.project_card header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.project_card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.project_card h3{
-    font-size: 2.5rem;
+.project_card h3 {
+  font-size: 2.5rem;
 }
 
-.links_project{
-    display: flex;
-    gap: 1rem;
+.links_project {
+  display: flex;
+  gap: 1rem;
 }
-.links_project a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project_card li{
-    color: #fafafa;
-    font-family: var(--text-Font);
-    font-size: 1.4rem;
-    padding: .5rem;
-    border-radius: .5rem;
-    background-color: #C7C8CC;
+.links_project a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.project_card ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+.project_card li {
+  color: #fafafa;
+  font-family: var(--text-Font);
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #c7c8cc;
 }
-.project_card li{
-    color: #272829;
-    font-weight: 800;
+
+.project_card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.project_card li {
+  color: #272829;
+  font-weight: 800;
 }
