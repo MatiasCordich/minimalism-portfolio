@@ -1,3 +1,14 @@
+// ---------- Persistir un valor de traduccion ----------
+document.addEventListener("DOMContentLoaded", function () {
+  let lang = localStorage.getItem("language");
+
+  if (lang) {
+    translateTo(lang); // Traducir según el idioma almacenado
+  } else {
+    translateTo("es"); // Configurar la traducción en español por defecto
+  }
+});
+
 // ---------- Texto con edad dinamico ----------
 
 let miniText = document.getElementById("mini_text");
@@ -16,7 +27,7 @@ if (
   yearsOld--;
 }
 
-miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`
+miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`;
 
 // ---------- Boton scroll up ----------
 
@@ -74,4 +85,7 @@ const translateTo = (language) => {
       element.textContent = text;
     }
   }
+
+  // Guardar el idioma en el almacenamiento local
+  localStorage.setItem("language", language);
 };
