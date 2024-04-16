@@ -16,7 +16,7 @@ if (
   yearsOld--;
 }
 
-miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`;
+miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`
 
 // ---------- Boton scroll up ----------
 
@@ -50,4 +50,28 @@ const scrollToTop = () => {
 window.addEventListener("scroll", toggleScrollBtn);
 
 // Evento cick para el boton para desplazar hacia arriba
-scrollUpBtn.addEventListener("click", scrollToTop)
+scrollUpBtn.addEventListener("click", scrollToTop);
+
+// Funcion para traducir
+const translateTo = (language) => {
+  let elements = document.getElementsByClassName("translate");
+  let aboutText;
+
+  if (language === "es") {
+    aboutText = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`;
+  } else if (language === "en") {
+    aboutText = `My name is Matías, I am ${yearsOld} years old, and I am currently working as a Frontend Developer. My main goal is to keep learning to develop simple and critical solutions that adapt to the client's needs.`;
+  }
+
+  // Actualizar el contenido del párrafo
+  miniText.textContent = aboutText;
+
+  // Actualizar el resto de los elementos
+  for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    let text = element.getAttribute("data-" + language);
+    if (text) {
+      element.textContent = text;
+    }
+  }
+};
