@@ -208,6 +208,16 @@ footer {
   border-radius: 0.3rem;
 }
 
+.btn_language{
+  background-color: #34495e;
+  border: none;
+  color: #fafafa;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
 /* -----  ----- EXPERIENCE -----  ----- */
 .experience {
   display: flex;
