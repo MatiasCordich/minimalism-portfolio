@@ -245,11 +245,19 @@ footer {
 
 /* -----  ----- SKILLS -----  ----- */
 
-.skills ul {
+.skills-group {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.skills-group ul {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .skill_item {

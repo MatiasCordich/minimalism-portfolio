@@ -76,7 +76,6 @@
                   />
                 </a>
               </li>
-              
             </ul>
 
             <a
@@ -89,8 +88,12 @@
               Descargar CV
             </a>
             <li>
-              <button class="btn_language" onclick="translateTo('es')">Es</button>
-              <button class="btn_language" onclick="translateTo('en')">En</button>
+              <button class="btn_language" onclick="translateTo('es')">
+                Es
+              </button>
+              <button class="btn_language" onclick="translateTo('en')">
+                En
+              </button>
             </li>
           </aside>
           <img class="header_img" src="./asset/matias.png" alt="" />
@@ -205,18 +208,51 @@
         <h2 data-es="Habilidades" data-en="Skills" class="translate">
           Habilidades
         </h2>
-        <ul>
-          <li class="skill_item">Javascript</li>
-          <li class="skill_item">Typescript</li>
-          <li class="skill_item">React</li>
-          <li class="skill_item">Bootstrap</li>
-          <li class="skill_item">Styled Components</li>
-          <li class="skill_item">PHP</li>
-          <li class="skill_item">Node Js</li>
-          <li class="skill_item">Express</li>
-          <li class="skill_item">Mongo</li>
-          <li class="skill_item">MySQL</li>
-        </ul>
+        <div class="skills-group">
+          <h4 data-es="Programacion"
+          data-en="Programming"
+          class="translate">Programacion</h4>
+          <ul>
+            <li class="skill_item">Javascript</li>
+            <li class="skill_item">Typescript</li>
+            <li class="skill_item">C#</li>
+            <li class="skill_item">VB .NET</li>
+            <li class="skill_item">Node Js</li>
+            <li class="skill_item">.NET</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h4>Frontend</h4>
+          <ul>
+            <li class="skill_item">React</li>
+            <li class="skill_item">Styled-Components</li>
+            <li class="skill_item">Framer Motion</li>
+            <li class="skill_item">Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h4>Backend</h4>
+          <ul>
+            <li class="skill_item">Node JS</li>
+            <li class="skill_item">Express</li>
+            <li class="skill_item">Mongoose</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h4 data-es="Bases de Datos"
+            data-en="Database"
+            class="translate">Bases de Datos</h4>
+          <ul>
+            <li class="skill_item">MySql</li>
+            <li class="skill_item">SQL Server</li>
+            <li class="skill_item">MongoDB</li>
+          </ul>
+        </div>
+
+        
       </section>
       <section class="projects">
         <h2 data-es="Proyectos" data-en="Proyects" class="translate">
@@ -228,7 +264,7 @@
               <h3>Ututo</h3>
               <ul>
                 <li class="links_project">
-                  <a href="#">
+                  <a href="https://github.com/ututolinux/sitioWeb">
                     <img
                       width="24"
                       height="24"
@@ -238,7 +274,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://ututo.ar/">
                     <img
                       width="24"
                       height="24"
@@ -280,7 +316,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://ututo.ar/" target="_blank">
+                  <a href="https://yerba.tech/" target="_blank">
                     <img
                       width="24"
                       height="24"
@@ -403,11 +439,11 @@
           </div>
           <div class="project_card">
             <header>
-              <h3>Todo List</h3>
+              <h3>ABM "Patitas"</h3>
               <ul>
                 <li class="links_project">
                   <a
-                    href="https://github.com/MatiasCordich/CRUD-NEST"
+                    href="https://github.com/MatiasCordich/Programacion-III-UNLZ/tree/main/ABMVeterinaria"
                     target="_blank"
                   >
                     <img
@@ -418,39 +454,20 @@
                     />
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://todo-list-lyart-rho.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-two-tone/24/272829/link--v1.png"
-                      alt="link--v1"
-                    />
-                  </a>
-                </li>
               </ul>
             </header>
 
             <p
-              data-es=" Aplicacion web donde se crean tareas utilizando el principio CRUD
-            para el manejo de base de datos."
-              data-en="Web application where tasks are created using the CRUD principle for database management."
+              data-es="Proyecto universitario orientado al desarrollo de un sistema de gestión tipo ABM de una veterinaria ficticia."
+              data-en="University project focused on developing a CRUD (Create, Read, Update, Delete) management system for a fictional veterinary clinic."
               class="translate"
             >
-              Aplicacion web donde se crean tareas utilizando el principio CRUD
-              para el manejo de base de datos.
+            Proyecto universitario orientado al desarrollo de un sistema de gestión tipo ABM orientado a una veterinaria.
             </p>
             <ul>
-              <li>Vite</li>
-              <li>React</li>
-              <li>Framer Motion</li>
-              <li>MongoDB</li>
-              <li>Nest Js</li>
-              <li>Typescript</li>
-              <li>Sooner</li>
+              <li>Visual Basic .NET</li>
+              <li>C#</li>
+              <li>SQL</li>
             </ul>
           </div>
         </div>
