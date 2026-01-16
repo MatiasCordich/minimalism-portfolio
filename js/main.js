@@ -1,5 +1,39 @@
-// ---------- Persistir un valor de traduccion ----------
+
+// ---------- Dark Mode ----------
+const toggleDarkMode = () => {
+  const root = document.documentElement;
+  root.classList.toggle("dark-mode");
+  
+  // Guardamos el modo en el LocalStorage
+  const isDarkMode = root.classList.contains("dark-mode");
+  localStorage.setItem("darkMode", isDarkMode ? "true" : "false");
+  
+  // Cambiar el ícono según el modo
+  updateDarkModeIcon(isDarkMode);
+};
+
+// Actualizar el ícono del dark mode
+const updateDarkModeIcon = (isDarkMode) => {
+
+  // Obtenemos el ícono y actualizamos su clase
+  const icon = document.getElementById("darkModeIcon");
+  if (icon) {
+    icon.className = isDarkMode ? "iconoir-sun-light" : "iconoir-half-moon";
+  }
+};
+
+// Cargar la preferencia de dark mode al iniciar la página
 document.addEventListener("DOMContentLoaded", function () {
+
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+  if (isDarkMode) {
+    document.documentElement.classList.add("dark-mode");
+  }
+  
+  // Actualizar el ícono según el modo cargado
+  updateDarkModeIcon(isDarkMode);
+  
   let lang = localStorage.getItem("language");
 
   if (lang) {
@@ -27,7 +61,12 @@ if (
   yearsOld--;
 }
 
-miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`;
+miniText.textContent = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador PeopleSoft para Ataway, Argentina. Mi principal objetivo es ir profundizando conocimientos en el área técnica orientado en el soporte de aplicaciones empresariales.`;
+
+// ---------- Año del Footer ----------
+
+const footerYear = document.getElementById("footerYear");
+footerYear.textContent = date.getFullYear();
 
 // ---------- Boton scroll up ----------
 
@@ -69,9 +108,9 @@ const translateTo = (language) => {
   let aboutText;
 
   if (language === "es") {
-    aboutText = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador Frontend. Mi principal objetivo es ir aprendiendo para desarrollar soluciones sencillas y críticas que se adapten a las necesidades del cliente.`;
+    aboutText = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador PeopleSoft para Ataway, Argentina. Mi principal objetivo es ir profundizando conocimientos en el área técnica orientado en el soporte de aplicaciones empresariales.`;
   } else if (language === "en") {
-    aboutText = `My name is Matías, I am ${yearsOld} years old, and I am currently working as a Frontend Developer. My main goal is to keep learning to develop simple and critical solutions that adapt to the client's needs.`;
+    aboutText = `My name is Matías, I am ${yearsOld} years old, and I currently work as a PeopleSoft Developer at Ataway, Argentina. My main goal is to deepen my technical knowledge in enterprise application support.`;
   }
 
   // Actualizar el contenido del párrafo
