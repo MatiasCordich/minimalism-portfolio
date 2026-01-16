@@ -11,468 +11,366 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto+Mono:wght@100..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+    />
+
     <link rel="icon" href="./asset/favicon.ico" />
   </head>
   <body>
     <main class="wrapper">
+      <!-- Botón scroll up - Inicio -->
       <button id="scrollUpBtn" class="btn_scroll-up hide">
-        <img
-          width="30"
-          height="30"
-          src="https://img.icons8.com/ios-filled/50/fafafa/up--v1.png"
-          alt="up--v1"
-        />
+        <i class="iconoir-arrow-up"></i>
       </button>
+      <!-- Botón scroll up - Fin -->
+
+      <!-- Header - Inicio -->
       <header class="header">
         <h1>Matias Sio Cordich</h1>
         <div class="header_container">
-          <aside class="header_information">
-            <p
-              class="translate"
-              data-es="Desarrollador Frontend Jr"
-              data-en="Jr Frontend Developer"
-            >
-              Desarrollador Frontend Jr
-            </p>
-            <p class="header_location">
-              <img
-                width="24"
-                height="24"
-                src="https://img.icons8.com/material-outlined/24/5F6769/marker.png"
-                alt="marker"
-              />Buenos Aires, Argentina
-            </p>
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/matiassiocordich/"
-                  target="_blank"
-                >
-                  <img
-                    width="30"
-                    height="30"
-                    src="https://img.icons8.com/ios-glyphs/30/272829/linkedin.png"
-                    alt="linkedin"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/MatiasCordich" target="_blank">
-                  <img
-                    width="30"
-                    height="30"
-                    src="https://img.icons8.com/ios-glyphs/30/272829/github.png"
-                    alt="github"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="mailto:m.scordich@gmail.com" target="_blank">
-                  <img
-                    width="30"
-                    height="30"
-                    src="https://img.icons8.com/ios-glyphs/30/272829/new-post.png"
-                    alt="new-post"
-                  />
-                </a>
-              </li>
-            </ul>
+          <p
+            class="header_role translate"
+            data-es="Desarrollador PeopleSoft Jr"
+            data-en="PeopleSoft Developer Jr"
+          >
+            Desarrollador PeopleSoft
+          </p>
+          <p class="header_location">
+            <i class="iconoir-map-pin"></i>Buenos Aires, Argentina
+          </p>
+          <ul class="header_links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/matiassiocordich/"
+                target="_blank"
+              >
+                <i class="iconoir-linkedin"></i>
+              </a>
+            </li>
 
-            <a
-              data-es="Descargar CV"
-              data-en="Download Resume"
-              class="translate resume_btn"
-              href="./asset/Matias Sio Coridich - CV.pdf"
-              target="_blank"
-            >
-              Descargar CV
-            </a>
+            <li>
+              <a href="mailto:m.scordich@gmail.com" target="_blank">
+                <i class="iconoir-reply-to-message"></i>
+              </a>
+            </li>
+          </ul>
+
+          <a
+            data-es="Descargar CV"
+            data-en="Download Resume"
+            class="translate resume_btn"
+            href="./asset/Matias Sio Coridich - CV.pdf"
+            target="_blank"
+          >
+            Descargar CV
+          </a>
+          <ul class="header_buttons">
             <li>
               <button class="btn_language" onclick="translateTo('es')">
                 Es
               </button>
+            </li>
+            <li>
               <button class="btn_language" onclick="translateTo('en')">
                 En
               </button>
             </li>
-          </aside>
-          <img class="header_img" src="./asset/matias.png" alt="" />
-        </div>
-      </header>
-      <section class="about">
-        <h2 data-es="Sobre mi" data-en="About me" class="translate">
-          Sobre mi
-        </h2>
-        <p id="mini_text"></p>
-      </section>
-      <main class="experience">
-        <h2 data-es="Experiencia" data-en="Experience" class="translate">
-          Experiencia
-        </h2>
-        <div class="experience_card">
-          <header class="card-header">
-            <h3>
-              Ututo
-              <span data-es="Remoto" data-en="Remote" class="translate"
-                >Remoto</span
+            <li>
+              <button
+                class="btn_darkmode"
+                onclick="toggleDarkMode()"
+                title="Toggle Dark Mode"
               >
-            </h3>
-            <p data-es="2024 - presente" data-en="2024 - now" class="translate">
-              2024 - presente
-            </p>
-          </header>
-          <p class="card_role">Jr Software Engineer</p>
-          <p
-            data-es="Actualmente me encuentro como colaborador del proyecto open source
-          UTUTO, una distribución del sistema operativo GNU/Linux, donde me
-          desempeño en el área de desarrollo web."
-            data-en="I am currently a contributor to the UTUTO open-source project, a distribution of the GNU/Linux operating system, where I work in the web development area."
-            class="translate"
-          >
-            Actualmente me encuentro como colaborador del proyecto open source
-            UTUTO, una distribución del sistema operativo GNU/Linux, donde me
-            desempeño en el área de desarrollo web.
-          </p>
-          <ul>
-            <li class="work_stack">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>Javascript</p>
-              <p>React</p>
+                <i id="darkModeIcon" class="iconoir-half-moon"></i>
+              </button>
             </li>
           </ul>
         </div>
-        <div class="experience_card">
-          <header class="card-header">
-            <h3>
-              Yerba Tech
-              <span data-es="Remoto" data-en="Remote" class="translate"
-                >Remoto</span
+      </header>
+      <!-- Header - Fin -->
+
+      <!-- Sobre Mi - Inicio -->
+      <section class="section_box">
+        <h2 data-es="Sobre mi" data-en="About me" class="translate">
+          Sobre mi
+        </h2>
+        <hr />
+        <p id="mini_text"></p>
+      </section>
+      <!-- Sobre Mi - Fin -->
+
+      <!-- Skills - Inicio -->
+      <section class="section_box">
+        <h2
+          data-es="Aptitudes Técnicas"
+          data-en="Technical skills"
+          class="translate"
+        >
+          Aptitudes Técnicas
+        </h2>
+        <hr />
+        <div class="technical_skills">
+          <ul class="technical_skills-list">
+            <li>
+              <p>PeopleSoft 8.9/9.2</p>
+            </li>
+            <li>
+              <p>PeopleCode</p>
+            </li>
+            <li>
+              <p>SQL</p>
+            </li>
+          </ul>
+          <ul class="technical_skills-list">
+            <li>
+              <p>Postman</p>
+            </li>
+            <li>
+              <p>Application Designer</p>
+            </li>
+            <li>
+              <p>Integration Broker</p>
+            </li>
+          </ul>
+          <ul class="technical_skills-list">
+            <li>
+              <p>Oracle Database</p>
+            </li>
+            <li>
+              <p>Microsoft SQL Server</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Skills - Fin -->
+
+      <!-- Experiencia - Inicio -->
+      <main class="main_box">
+        <h2 data-es="Experiencia" data-en="Experience" class="translate">
+          Experiencia
+        </h2>
+        <hr />
+
+        <div class="experience">
+          <div class="experience_header">
+            <h4
+              data-es="Ataway | Desarrollador PeopleSoft"
+              data-en="Ataway | PeopleSoft Developer"
+              class="translate"
+            >
+              Ataway | Desarrollador PeopleSoft
+            </h4>
+            <div class="experience_info">
+              <p
+                data-es="Dic. 2024 - Actualidad"
+                data-en="Dec. 2024 - Present"
+                class="translate range_time"
               >
-            </h3>
-            <p data-es="2024 - presente" data-en="2024 - now" class="translate">
-              2024 - presente
-            </p>
-          </header>
-          <p
-            data-es="Desarrollador Frontend Jr"
-            data-en="Jr Frontend Developer"
-            class="translate card_role"
-          >
-            Desarrollador Frontend Jr
-          </p>
-          <p
-            data-es="Pequeña compañía de software, donde me desempeño como desarrollador
-          web, en la cual desarrollamos productos y soluciones a medida para
-          nuestros clientes."
-            data-en="Small software company, where I work as a web developer, in which we develop customized products and solutions for our clients."
-            class="translate"
-          >
-            Pequeña compañía de software, donde me desempeño como desarrollador
-            web, en la cual desarrollamos productos y soluciones a medida para
-            nuestros clientes.
-          </p>
-          <li class="work_stack">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>Bootstrap</p>
-            <p>PHP</p>
-            <p>MySQL</p>
-          </li>
+                Dic. 2024 - Actualidad
+              </p>
+              <p
+                data-es="Argentina"
+                data-en="Argentina"
+                class="translate location"
+              >
+                Argentina
+              </p>
+            </div>
+          </div>
+          <ul class="experiencie_list">
+            <li>
+              <p 
+                class="translate"
+                data-es="Diseño y desarrollo de páginas y componentes personalizados en PeopleSoft."
+                data-en="Design and development of custom pages and components in PeopleSoft."
+              >
+                Diseño y desarrollo de páginas y componentes personalizados en PeopleSoft.
+              </p>
+            </li>
+            <li>
+              <p 
+                class="translate"
+                data-es="Análisis y optimización de consultas SQL para bases de datos Oracle y Microsoft SQL Server."
+                data-en="Analysis and optimization of SQL queries for Oracle and Microsoft SQL Server databases."
+              >
+                Análisis y optimización de consultas SQL para bases de datos Oracle y Microsoft SQL Server.
+              </p>
+            </li>
+            <li>
+              <p 
+                class="translate"
+                data-es="Desarrollo de pruebas unitarias y elaboración de documentación técnica detallada."
+                data-en="Development of unit tests and preparation of detailed technical documentation."
+              >
+                Desarrollo de pruebas unitarias y elaboración de documentación técnica detallada.
+              </p>
+            </li>
+            <li>
+              <p 
+                class="translate"
+                data-es="Configuración y mantenimiento de integraciones de sistemas mediante Integration Broker."
+                data-en="Configuration and maintenance of system integrations through Integration Broker."
+              >
+                Configuración y mantenimiento de integraciones de sistemas mediante Integration Broker.
+              </p>
+            </li>
+          </ul>
         </div>
       </main>
-      <section class="education">
+      <!-- Experiencia - Fin -->
+
+      <!-- Proyectos - Inicio -->
+      <section class="section_box">
+        
+        <h2 data-es="Proyectos" data-en="Projects" class="translate">
+          Proyectos
+        </h2>
+
+        <hr />
+
+        <div class="projects">
+          <div class="projects_header">
+            <h4
+              data-es="Cencosud"
+              data-en="Cencosud"
+              class="translate"
+            >
+              Cencosud 
+            </h4>
+
+            <p class="project_stack">PeopleSoft 8.9 - 9.2, PeopleCode, Integration Broker, Oracle Database, SQL Server, Postman, Application Designer</p>
+            </div>
+            
+            <div class="experience_info">
+              <p
+                data-es="Dic. 2024 - Actualidad"
+                data-en="Dec. 2024 - Present"
+                class="translate range_time"
+              >
+                Dic. 2024 - Actualidad
+              </p>
+              <p
+                data-es="Argentina"
+                data-en="Argentina"
+                class="translate location"
+              >
+                Argentina
+              </p>
+            </div>
+          </div>
+          <ul class="project_list">
+            <li>
+              <p 
+                class="translate"
+                data-es="Aseguré la continuidad operativa del portal PeopleSoft HCM (versiones 8.9 Y 9.2) para las sedes de Colombia, Uruguay y Chile, realizando ajustes técnicos según los requerimientos de negocio."
+                data-en="Ensured the operational continuity of the PeopleSoft HCM portal (versions 8.9 and 9.2) for the Colombia, Uruguay, and Chile offices, making technical adjustments according to business requirements."
+              >
+                Aseguré la continuidad operativa del portal PeopleSoft HCM (versiones 8.9 Y 9.2) para las sedes de Colombia, Uruguay y Chile, realizando ajustes técnicos según los requerimientos de negocio.  
+              </p>
+            </li>
+            <li>
+              <p 
+                class="translate"
+                data-es="Corregí y mejoré flujos de datos mediante Integration Broker, garantizando la sincronización de información entre PeopleSoft y el portal de RRHH de Cencosud."
+                data-en="Corrected and improved data flows through Integration Broker, ensuring synchronization of information between PeopleSoft and Cencosud's HR portal."
+              >
+                Corregí y mejoré flujos de datos mediante Integration Broker, garantizando la sincronización de información entre PeopleSoft y el portal de RRHH de Cencosud.
+              </p>
+            </li>
+            <li>
+              <p 
+                class="translate"
+                data-es="Optimicé la trazabilidad de datos maestros mediante el análisis de tablas y consultas en Oracle y SQL Server, detectando y corrigiendo inconsistencias en la información."
+                data-en="Optimized master data traceability through the analysis of tables and queries in Oracle and SQL Server, detecting and correcting inconsistencies in the information."
+              >
+                Optimicé la trazabilidad de datos maestros mediante el análisis de tablas y consultas en Oracle y SQL Server, detectando y corrigiendo inconsistencias en la información. 
+              </p>
+            </li>
+            <li>
+              <p 
+                class="translate"
+                data-es="Documenté y ejecué pruebas unitarias de los cambios implementados, asegurando que las soluciones fueran estables y cumplieran con los requisitos funcionales."
+                data-en="Documented and executed unit tests for the implemented changes, ensuring that the solutions were stable and met functional requirements."
+              >
+                Documenté y ejecué pruebas unitarias de los cambios implementados, asegurando que las soluciones fueran estables y cumplieran con los requisitos funcionales.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Proyectos - Fin -->
+
+      <!-- Educación - Inicio -->
+      <section class="section_box">
         <h2 data-es="Educación" data-en="Education" class="translate">
           Educación
         </h2>
-        <div class="experience_card">
-          <header class="card-header">
-            <h3 class="card_university">
-              Universidad Nacional Lomas de Zamora
-            </h3>
-            <p data-es="2023 - presente" data-en="2023 - now" class="translate">
-              2023 - presente
+
+        <hr />
+
+        <div class="education">
+          <aside class="educacion_col_1">
+            <h3>Universidad Nacional Lomas de Zamora</h3>
+            <p
+              data-es="Tecnicatura en Programación."
+              data-en="Associate Degree in Programming."
+              class="translate"
+            >
+              Tecnicatura en Programación.
             </p>
-          </header>
-          <p
-            data-es="Tecnicatura en Programación."
-            data-en="Associate Degree in Programming."
-            class="translate"
-          >
-            Tecnicatura en Programación.
-          </p>
+          </aside>
+          <aside class="educacion_col_2">
+            <p
+              data-es="Mar. 2023 - Ago. 2025"
+              data-en="Mar. 2023 - Aug. 2025"
+              class="translate range_time"
+            >
+              Mar. 2023 - Ago. 2025
+            </p>
+            <p
+              data-es="CABA, Buenos Aires"
+              data-en="CABA, Buenos Aires"
+              class="translate location"
+            >
+              CABA, Buenos Aires
+            </p>
+          </aside>
         </div>
       </section>
-      <section class="skills">
-        <h2 data-es="Habilidades" data-en="Skills" class="translate">
-          Habilidades
+      <!-- Educación - Fin -->
+
+      <!-- Información adicional - Inicio -->
+      <section class="section_box">
+        <h2 data-es="Información Adicional" data-en="Additional Information" class="translate">
+          Información Adicional
         </h2>
-        <div class="skills-group">
-          <h4 data-es="Programacion"
-          data-en="Programming"
-          class="translate">Programacion</h4>
-          <ul>
-            <li class="skill_item">Javascript</li>
-            <li class="skill_item">Typescript</li>
-            <li class="skill_item">C#</li>
-            <li class="skill_item">VB .NET</li>
-            <li class="skill_item">Node Js</li>
-            <li class="skill_item">.NET</li>
-          </ul>
-        </div>
 
-        <div class="skills-group">
-          <h4>Frontend</h4>
-          <ul>
-            <li class="skill_item">React</li>
-            <li class="skill_item">Styled-Components</li>
-            <li class="skill_item">Framer Motion</li>
-            <li class="skill_item">Bootstrap</li>
-          </ul>
-        </div>
+        <hr />
 
-        <div class="skills-group">
-          <h4>Backend</h4>
-          <ul>
-            <li class="skill_item">Node JS</li>
-            <li class="skill_item">Express</li>
-            <li class="skill_item">Mongoose</li>
-          </ul>
-        </div>
-
-        <div class="skills-group">
-          <h4 data-es="Bases de Datos"
-            data-en="Database"
-            class="translate">Bases de Datos</h4>
-          <ul>
-            <li class="skill_item">MySql</li>
-            <li class="skill_item">SQL Server</li>
-            <li class="skill_item">MongoDB</li>
-          </ul>
-        </div>
-
-        
-      </section>
-      <section class="projects">
-        <h2 data-es="Proyectos" data-en="Proyects" class="translate">
-          Proyectos
-        </h2>
-        <div class="project_card-container">
-          <div class="project_card">
-            <header>
-              <h3>Ututo</h3>
-              <ul>
-                <li class="links_project">
-                  <a href="https://github.com/ututolinux/sitioWeb">
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-outlined/24/272829/github.png"
-                      alt="github"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://ututo.ar/">
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-two-tone/24/272829/link--v1.png"
-                      alt="link--v1"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </header>
-
-            <p
-              data-es="Proyecto web para el Sistema Operativo Linux Ututo. Landing 'En Construcción'."
-              data-en="Web project for the Ututo Linux Operating System. Landing 'Under Construction'."
-              class="translate"
-            >
-              Proyecto web para el Sistema Operativo Linux Ututo. Landing "En
-              Construcción"
+        <ul class="language_list">
+          <li>
+            <p class="translate"
+                data-es="Español (nativo)"
+                data-en="Spanish (native)">Español (nativo)</p>
+          </li>
+          <li>
+            <p class="translate"
+                data-es="Inglés (B2)"
+                data-en="English (B2)">
+              Ingles (B2)
             </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>React</li>
-            </ul>
-          </div>
-          <div class="project_card">
-            <header>
-              <h3>Yerba Tech</h3>
-              <ul>
-                <li class="links_project">
-                  <a href="https://github.com/ututolinux" target="_blank">
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-outlined/24/272829/github.png"
-                      alt="github"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://yerba.tech/" target="_blank">
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-two-tone/24/272829/link--v1.png"
-                      alt="link--v1"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </header>
+          </li>
+        </ul>
 
-            <p
-              data-es="Pagina web para la compañía de Software Yerba Tech"
-              data-en="Website for the software company Yerba Tech."
-              class="translate"
-            >
-              Pagina web para la compañía de Software Yerba Tech
-            </p>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>JQuery</li>
-              <li>PHP</li>
-            </ul>
-          </div>
-          <div class="project_card">
-            <header>
-              <h3>APP Clima</h3>
-              <ul>
-                <li class="links_project">
-                  <a
-                    href="https://github.com/MatiasCordich/react-weather-app"
-                    target="_blank"
-                  >
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-outlined/24/272829/github.png"
-                      alt="github"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://react-weather-app-two-pi.vercel.app/"
-                    target="_blank"
-                  >
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-two-tone/24/272829/link--v1.png"
-                      alt="link--v1"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </header>
+       
+      <!-- Información adicional - Fin -->
 
-            <p
-              data-es=" Aplicación web del clima a nivel mundial utilizando la API
-            OpenWeather."
-              data-en="Worldwide weather web application using the OpenWeather API."
-              class="translate"
-            >
-              Aplicación web del clima a nivel mundial utilizando la API
-              OpenWeather.
-            </p>
-            <ul>
-              <li>React</li>
-              <li>Framer Motion</li>
-              <li>Styled Components</li>
-              <li>Weather API</li>
-            </ul>
-          </div>
-          <div class="project_card">
-            <header>
-              <h3>Eco Woods</h3>
-              <ul>
-                <li class="links_project">
-                  <a
-                    href="https://github.com/MatiasCordich/eco-woods-landing-page"
-                    target="_blank"
-                  >
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-outlined/24/272829/github.png"
-                      alt="github"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://eco-woods.vercel.app/" target="_blank">
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-two-tone/24/272829/link--v1.png"
-                      alt="link--v1"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </header>
-
-            <p
-              data-es=" Landing Page de un comercio ficticio de venta de muebles para el
-            hogar."
-              data-en="Landing Page for a fictional furniture home goods store."
-              class="translate"
-            >
-              Landing Page de un comercio ficticio de venta de muebles para el
-              hogar.
-            </p>
-            <ul>
-              <li>Vite</li>
-              <li>React</li>
-              <li>Framer Motion</li>
-            </ul>
-          </div>
-          <div class="project_card">
-            <header>
-              <h3>ABM "Patitas"</h3>
-              <ul>
-                <li class="links_project">
-                  <a
-                    href="https://github.com/MatiasCordich/Programacion-III-UNLZ/tree/main/ABMVeterinaria"
-                    target="_blank"
-                  >
-                    <img
-                      width="24"
-                      height="24"
-                      src="https://img.icons8.com/material-outlined/24/272829/github.png"
-                      alt="github"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </header>
-
-            <p
-              data-es="Proyecto universitario orientado al desarrollo de un sistema de gestión tipo ABM de una veterinaria ficticia."
-              data-en="University project focused on developing a CRUD (Create, Read, Update, Delete) management system for a fictional veterinary clinic."
-              class="translate"
-            >
-            Proyecto universitario orientado al desarrollo de un sistema de gestión tipo ABM orientado a una veterinaria.
-            </p>
-            <ul>
-              <li>Visual Basic .NET</li>
-              <li>C#</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <footer><p>Matias Sio Cordich</p></footer>
+      <footer>
+        <p>Matias Sio Cordich - <span id="footerYear"></span>
+        </p>
+      </footer>
     </main>
   </body>
 
