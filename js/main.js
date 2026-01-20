@@ -106,11 +106,14 @@ scrollUpBtn.addEventListener("click", scrollToTop);
 const translateTo = (language) => {
   let elements = document.getElementsByClassName("translate");
   let aboutText;
+  const resumeLink = document.getElementById("resumeLink");
 
   if (language === "es") {
     aboutText = `Me llamo Matías, tengo ${yearsOld} años, actualmente me encuentro trabajando como Desarrollador PeopleSoft para Ataway, Argentina. Mi principal objetivo es ir profundizando conocimientos en el área técnica orientado en el soporte de aplicaciones empresariales.`;
+    resumeLink.href = "./asset/CV_Matias-Sio-Cordich_es.pdf";
   } else if (language === "en") {
     aboutText = `My name is Matías, I am ${yearsOld} years old, and I currently work as a PeopleSoft Developer at Ataway, Argentina. My main goal is to deepen my technical knowledge in enterprise application support.`;
+    resumeLink.href = "./asset/CV_Matias-Sio-Cordich_en.pdf";
   }
 
   // Actualizar el contenido del párrafo
